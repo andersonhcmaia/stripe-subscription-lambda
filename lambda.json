@@ -1,0 +1,9 @@
+{
+  "FunctionName": "stripe-subscription-server",
+  "Handler": "index.handler",
+  "Role": null,
+  "Runtime": "nodejs4.3",
+  "Description": "None",
+  "MemorySize": 128,
+  "Timeout": 3
+}
