@@ -20,7 +20,7 @@ exports.handler = function(event, context) {
             context.fail(err);
           }
           else{
-            context.succeed({ customer: customer.id, success : true });
+            context.succeed({ customer: customer.id, subscription: subscription.id, success : true });
           }
         });
       }
