@@ -15,6 +15,7 @@ This project provides a Lambda function to act as a back-end server for Stripe S
 
 
 ## Uploading Lambda Function
+_**MIT License Copyright (c) 2015 Micha Wotton**_
 
 To simply deploy the lambda function `gulp deploy`. The following tasks are also provided.
 
