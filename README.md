@@ -52,15 +52,17 @@ In order to deploy the REST API for communication over HTTP using the POST metho
 
 `./setupAPI.sh`
 
+The script relies on the variables set on `.env`, so make sure you have those set.
+
 ## Make New Subscription
 
 Communicate with the REST API through the POST method, providing a JSON in the following format:
 
-`       \
-{
-  "plan": "the-desired-subscription-plan-id",
-  "cc": "the-payment-source-token",
-  "email": "email-of-the-customer-to-be-subscribed"
+`
+{ \n
+  "plan": "the-desired-subscription-plan-id", \n
+  "cc": "the-payment-source-token", \n
+  "email": "email-of-the-customer-to-be-subscribed" \n
 }`
 
 * `plan`: should be a plan already registered in Stripe (this can be done through Stripe's dashboard).
@@ -69,11 +71,11 @@ Communicate with the REST API through the POST method, providing a JSON in the f
 
 The response will be a JSON in the following format:
 
-`       \
-{
-  "customer": "created-customer-id",
-  "subscription": "created-subscription-id",
-  "success: true"
+`
+{ \n
+  "customer": "created-customer-id", \n
+  "subscription": "created-subscription-id", \n
+  "success: true" \n
 }
 `
 
